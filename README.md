@@ -18,11 +18,11 @@
 ```text
 📁 Repository
  ┣ 📂 week01
- ┃ ┣ 📂 hong_inki            # 본인 영문 이름 또는 깃허브 ID
+ ┃ ┣ 📂 hong            # 본인 영문 이름 또는 깃허브 ID
  ┃ ┃ ┣ 📂 카카오_인형뽑기  # 문제 이름으로 폴더 생성 (선택)
  ┃ ┃ ┃ ┗ 📄 Solution.java
  ┃ ┃ ┗ 📄 TargetNumber.java # 문제 이름으로 파일 생성 (선택)
- ┃ ┗ 📂 kim_chulsoo
+ ┃ ┗ 📂 kim
  ┣ 📂 week02
  ...
 ```
@@ -55,16 +55,16 @@ git pull upstream main
 ### 2. 브랜치 생성 및 작업
 주차별로 새로운 브랜치를 만들어 작업합니다. (브랜치명 규칙: `주차/이름`)
 ```bash
-git checkout -b week01/hong_inki
+git checkout -b week01/my_name
 ```
-지정된 폴더(`week01/hong_inki/`)에 자바 코드를 작성하고 테스트를 완료합니다.
+지정된 폴더(`week01/my_name/`)에 자바 코드를 작성하고 테스트를 완료합니다.
 
 ### 3. 작업 완료 후 Commit & Push
 코드를 커밋하고 **자신의 저장소(Origin)**에 푸시합니다.
 ```bash
 git add .
 git commit -m "feat: 1주차 프로그래머스 문제 완료"
-git push origin week01/hong_inki
+git push origin week01/my_name
 ```
 
 ### 4. Pull Request 생성
