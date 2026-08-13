@@ -1,3 +1,4 @@
+
 /**
  * 문제: 두 수의 합
  * 출처: 프로그래머스
@@ -10,6 +11,7 @@
  * Input: nums = [2, 7, 11, 15], target = 9
  * Output: [0, 1]
  * 설명: nums[0] + nums[1] = 2 + 7 = 9
+ * testtesttets
  */
 
 import java.util.HashMap;
@@ -33,7 +35,7 @@ public class TwoSum {
     }
 
     public static void main(String[] args) {
-        int[] nums = {2, 7, 11, 15};
+        int[] nums = { 2, 7, 11, 15 };
         int target = 9;
 
         int[] result = solution(nums, target);
