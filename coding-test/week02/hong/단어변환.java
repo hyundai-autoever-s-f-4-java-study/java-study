@@ -62,3 +62,41 @@ class Solution {
         return count == word.length() - 1;
     }
 }
+
+/*
+// BFS 방식 (더 효율적)
+class Solution {
+    public int solution(String begin, String target, String[] words) {
+        Queue<String> queue = new LinkedList<>();
+        boolean[] visited = new boolean[words.length];
+        queue.offer(begin);
+        int depth = 0;
+
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            for (int k = 0; k < size; k++) {
+                String cur = queue.poll();
+                if (cur.equals(target)) {
+                    return depth;
+                }
+                for (int i = 0; i < words.length; i++) {
+                    if (!visited[i] && isConnected(cur, words[i])) {
+                        visited[i] = true;
+                        queue.offer(words[i]);
+                    }
+                }
+            }
+            depth++;
+        }
+        return 0;
+    }
+
+    public boolean isConnected(String a, String b) {
+        int count = 0;
+        for (int i = 0; i < a.length(); i++) {
+            if (a.charAt(i) == b.charAt(i)) count++;
+        }
+        return count == a.length() - 1;
+    }
+}
+*/
